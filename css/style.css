@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0pc;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgba(250, 250, 245, 0.800);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+/*---------------------------   HEADER  ---------------------------*/
+header{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+#logoimagen{
+    width: 100%;
+    height: 65px;
+}
+#logo div a{
+    text-decoration: none;
+}
+#logotitulo{
+    font-family: 'Cormorant', serif;
+    font-size: 250%;
+    border-bottom: 0.5px solid;
+    color: rgba(0, 0, 0, 0.801);
+}
+nav{
+    width: 50%;
+}
+nav ul{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.836);
+}
+nav a:hover{
+    border-bottom: 1px solid;
+}
+
+/*--------------------------------  FRONTPAGE --------------------------------*/
+
+#main{
+    background-color: red;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+}
+/*.seccion-bloques__bloque a{
+    background-color: teal;
+    text-decoration: none;
+}*/
+.seccion-bloques{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    padding-top: 10px;
+}
+.seccion-bloques__bloque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 95%;
+}
+.seccion-bloques__bloque__texto{
+    background-color: rgba(19, 13, 68, 0.850);
+    border: 1px solid #f1f1f1;
+    color: white;
+    width: 75%;
+    height: 200px;
+    text-align: center;
+}
+.seccion-bloques__bloque__texto h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.seccion-bloques__bloque__texto p{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#home-pedidos{
+    background-image: url(../assets/img/taza.jpg);
+    background-size: cover;
+}
+#home-reservas{
+    background-image: url(../assets/img/salon.jpg);
+    background-size: cover;
+}
+.seccion-banner{
+    background-color: rgb(109, 130, 228,0.500);
+    background-image: url(../assets/img/cine.jpg);
+    background-size: cover;
+    display: flex;
+    height: 500px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-banner__texto{
+    /*background-color: red;*/
+    color: black;
+    padding: 10px;
+}
+.seccion-banner h2{
+    /*background-color: blue;*/
+    font-size: 50px;
+    margin: 10px 10px 10px 10px;
+    text-transform: uppercase;
+}
+.seccion-banner p{
+    /*background-color: green;*/
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: end;
+}
+/*#home-noticia2{
+    background-color: aquamarine;
+}
+#home-noticia2__texto {
+    background-color: blue;
+}*/
+
+/*------------------------------  FOOTER  ------------------------------*/
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 60% auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 'ubicacion rrss' 'legales legales';
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+    background-image: url(../assets/img/old2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0.637);
+    color: white;
+}
+footer div h4{
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+footer div p, h6{
+    font-weight: normal;
+}
+#ubicacion{
+    grid-area: ubicacion;
+}
+#rrss{
+    grid-area: rrss;
+}
+.legales{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    list-style-type: none;
+    grid-area: legales;
+}
+.legales li{
+    margin-right: 20px;
+    font-size: 15px;
+    text-align: right;
+}
+.legales h6{
+    font-size: 15px;
+}
+
+/*--------------------   PRESENTACION DE SECCIONES   ------------------------*/
+
+.presentacion{
+    position: relative;
+    height: 350px;
+}
+.presentacionfoto{
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-size: auto 350px px;
+    background-repeat: no-repeat;
+    filter: blur(3px) saturate(85%) contrast(120%);
+}
+.presentaciontitulo{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 34%;
+    width: 450px;
+    height: 140px;
+    padding-top: 75px;
+    background-color: rgba(19, 13, 68, 0.850);
+    color: white;
+    border: 1px solid #f1f1f1;
+    font-size: 60px;
+    text-align: center;
+}
+#presentacioncarta{
+    background-image: url(../assets/img/muro.jpg);
+}
+#presentacioncontacto{
+    /*background-image: url(../assets/img/taza2.jpg);
+    background-size: 100% 900px;
+    overflow: hidden;*/
+    background-image: url(../assets/img/barra3.jpg);
+    background-size: cover;
+    filter: blur(3px) saturate(90%) contrast(120%);
+}
+#presentacionhistoria{
+    background-image: url(../assets/img/old.jpg);
+    background-size: cover;
+    filter: blur(3px) saturate(85%) contrast(120%) brightness(60%);
+}
+#presentacionreservas{
+    background-image: url(../assets/img/salon.jpg);
+    background-size: cover;
+}
+#presentacionstaff{
+    background-image: url(../assets/img/staff.jpg);
+    background-size: cover;
+    filter: blur(4px) saturate(85%) contrast(120%) brightness(60%);
+}
+
+/*-------------------------   CONTACTO   -----------------------------*/
+
+#contacto{
+    margin: 100px 100px 100px 100px;
+}
+#contacto form fieldset{
+    background-color: rgba(235, 235, 235, 0.400);
+    height: 700px;
+}
+#contacto form fieldset legend{
+    font-size: 30px;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+#infocontacto{
+    margin: 20px auto 40px 50px;
+    line-height: 25px;
+}
+#infocontacto h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#infosubmit{
+    margin: 20px auto 40px 50px;
+    line-height: 25px;
+}
+#infosubmit h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#comentario{
+    width: 900px;
+    height: 200px;
+}
+
+/*-------------------------   HISTORIA   -----------------------------*/
+
+#historia{
+    background-color: rgba(240, 240, 215, 0.800);
+}
+#historia section{
+    margin: 10px;
+}
+.año{
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.750);
+}
+.año h2{
+    margin: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+.año p{
+    padding: 10px;
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+}
+#historia iframe{
+    margin: 25px auto 80px 415px;
+}
+
+/*-------------------------   RESERVAS   -----------------------------*/
+
+#reservas section{
+    text-align: center;
+}
+#reservas section h2{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#formres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    height: 600px;
+    width: 800px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    font-size: 40px;
+}
+
+/*-------------------------   STAFF   -----------------------------*/
+
+#staff{
+    margin: 10px;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.950);
+}
+#staff h2{
+    margin: 25px;
+    /*text-align: center;*/
+    font-size: 50px;
+}
+#staff p{
+    padding: 10px;
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 320px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        margin-top: 10px;
+        width: 100%;
+    }
+    #logo{
+        justify-content: start;
+        width: 100%;
+        margin-left: 10%;
+    }
+    #logotitulo{
+        width: 100%;
+        margin-left: 10%;
+    }
+    main{
+        /*background-color: red;*/
+        width: 1200px;
+    }
+    .seccion-bloques{
+        /*background-color: blue;*/
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 1200px;
+        height: 1000px;
+    }
+    .seccion-bloques__bloque{
+        width: 100%;
+        height: 500px;
+    }
+    footer{
+        grid-template-columns: auto;
+        grid-template-rows: 40% 40% 20%;
+        grid-template-areas: 'ubicacion' 'rrss' 'legales';
+        justify-items: center;
+        width: 1200px;
+    }
+    #ubicacion, #rrss{
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    header{
+        flex-direction: row;
+    }
+    #logo{
+        width: 40%;
+    }
+    #logotitulo{
+        margin-left: 5%;
+    }
+    nav{
+        width: 50%;
+    }
+    main{
+        /*background-color: red;*/
+        width: 100%;
+    }
+    .seccion-bloques{
+        /*background-color: blue;*/
+        flex-direction: row;
+        width: 100%;
+        height: 500px;
+    }
+    footer{
+        grid-template-columns: auto auto;
+        grid-template-rows: 60% auto;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: 'ubicacion rrss' 'legales legales';
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+    }
+    #ubicacion, #rrss{
+        text-align: left;
+    }
+}
