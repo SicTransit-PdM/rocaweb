@@ -411,7 +411,7 @@ footer div p, h6{
     }
     main{
         /*background-color: red;*/
-        width: 1200px;
+        width: 100%;
     }
     .seccion-bloques{
         /*background-color: blue;*/
