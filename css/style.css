@@ -152,6 +152,32 @@ nav a:hover{
     background-color: blue;
 }*/
 
+.bienvenida{
+    height: 250px;
+    width: auto;
+    text-align: center;
+    font-size: 600%;
+    animation-name: bienvenidaAnim;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.bienvenida p{
+    padding-top: 50px;
+}
+@keyframes bienvenidaAnim{
+    0%{
+        background: linear-gradient(70deg, rgb(127, 161, 255), white, white, rgb(127, 161, 255));
+    }
+    50%{
+        background: linear-gradient(70deg, rgb(127, 161, 255), rgb(202, 208, 233), rgb(202, 208, 233), rgb(127, 161, 255));
+    }
+    100%{
+        background: linear-gradient(70deg, rgb(127, 161, 255), rgb(167, 179, 231), rgb(167, 179, 231), rgb(127, 161, 255));
+    }
+}
+
 /*------------------------------  FOOTER  ------------------------------*/
 
 footer{
