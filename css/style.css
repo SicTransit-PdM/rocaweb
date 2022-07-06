@@ -429,7 +429,7 @@ footer div p, h6{
         grid-template-rows: 40% 40% 20%;
         grid-template-areas: 'ubicacion' 'rrss' 'legales';
         justify-items: center;
-        width: 1200px;
+        width: 100%;
     }
     #ubicacion, #rrss{
         text-align: center;
