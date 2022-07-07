@@ -8,12 +8,13 @@
 }
 body{
     background-color: rgba(250, 250, 245, 0.800);
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
+main{
+    margin-top: 100px;
+}
 
 
 /*---------------------------   HEADER  ---------------------------*/
@@ -68,16 +69,22 @@ nav a:hover{
 
 /*--------------------------------  FRONTPAGE --------------------------------*/
 
-#main{
+/*#frontpage{
     background-color: red;
     display: flex;
     flex-flow: column nowrap;
     justify-items: center;
-}
+}*/
 /*.seccion-bloques__bloque a{
     background-color: teal;
     text-decoration: none;
 }*/
+.carousel{
+    margin-bottom: 2rem;
+}
+.carousel-item img{
+    max-height: 20rem;
+}
 .seccion-bloques{
     display: flex;
     justify-content: space-evenly;
@@ -152,7 +159,7 @@ nav a:hover{
     background-color: blue;
 }*/
 
-.bienvenida{
+/*.bienvenida{
     height: 250px;
     width: auto;
     text-align: center;
@@ -165,7 +172,7 @@ nav a:hover{
 }
 .bienvenida p{
     padding-top: 50px;
-}
+}*/
 @keyframes bienvenidaAnim{
     0%{
         background: linear-gradient(70deg, rgb(127, 161, 255), white, white, rgb(127, 161, 255));
@@ -258,8 +265,47 @@ footer div p, h6{
     font-size: 60px;
     text-align: center;
 }
-#presentacioncarta{
+/*#presentacioncarta{
+    display: flex;
+    min-height: 500px;
     background-image: url(../assets/img/muro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}*/
+/*#presentacioncarta-titulo{
+    z-index: 1;
+    background-color: rgba(19, 13, 68, 0.850);
+    color: white;
+    border: 0.1rem solid #f1f1f1;
+    text-align: center;
+    align-items: center;
+    min-height: 15rem;
+    min-width: 25rem;
+}*/
+/*#presentacioncarta-titulo h2{
+    border: 1px solid red;
+}*/
+.presentacion2{
+    align-items: center;
+    text-align: center;
+}
+.presentacion2-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion2 h5{
+    background-color: rgba(19, 13, 68, 0.850);
+    color: white;
+    border: 0.1rem solid #f1f1f1;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 3rem 3rem 3rem 3rem;
+}
+.presentacion2 img{
+    max-height: 450px;
 }
 #presentacioncontacto{
     /*background-image: url(../assets/img/taza2.jpg);
@@ -282,6 +328,26 @@ footer div p, h6{
     background-image: url(../assets/img/staff.jpg);
     background-size: cover;
     filter: blur(4px) saturate(85%) contrast(120%) brightness(60%);
+}
+
+/*----------------------------   CARTA   --------------------------------*/
+
+.menu{
+    /* border: 2px solid blue; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.menu_categoria{
+    /* border: 1px solid red; */
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3rem 3rem 3rem 3rem;
+}
+.menu_categoria div{
+    /* border: 1px solid green; */
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 /*-------------------------   CONTACTO   -----------------------------*/
