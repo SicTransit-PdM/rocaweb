@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,16 @@
     <title>Confiteria Roca | Inicio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="assets/img/logo.png">
-    <script src="https://use.fontawesome.com/b29ce011be.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div id="logo">
+    <header class="container-fluid">
+        <div id="logo" class="container-fluid">
             <div><a href="index.html"><img src="assets/img/logo.png" alt="logo" id="logoimagen"></a></div>
-            <div><a href="index.html"><h1 id="logotitulo">CONFITERIA ROCA</h1></a></div>
+            <div><a href="index.html">
+                    <h1 id="logotitulo">CONFITERIA ROCA</h1>
+                </a></div>
         </div>
         <nav>
             <ul>
@@ -26,22 +29,78 @@
             </ul>
         </nav>
     </header>
-    <main id="frontpage">
-        <div class="bienvenida">
-            <p id="bienvenida-texto"> Bienvenido</p>
-        </div>
-        <section class="seccion-bloques">
-            <div class="seccion-bloques__bloque" id="home-pedidos">
-                <!--a href="pages/carta.html"--><div class="seccion-bloques__bloque__texto">
-                    <h2>Hace tu pedido online</h2>
-                    <p>Disfruta la calidad de siempre ahora en tu casa</p>
-                </div><!--/a-->
+    <main id="frontpage" class="container-fluid">
+        <div>
+            <div id="carrusel" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carsalon.jpg" class="d-block w-100" alt="photo1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carpza.jpg" class="d-block w-100" alt="photo2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carplaca.jpg" class="d-block w-100" alt="photo3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carcuadros.jpg" class="d-block w-100" alt="photo4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carlatte.jpg" class="d-block w-100" alt="photo5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carfrente.jpg" class="d-block w-100" alt="photo6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <div class="seccion-bloques__bloque" id="home-reservas">
-                <!--a href="pages/reservas.html"--><div class="seccion-bloques__bloque__texto">
-                    <h2>Reserva tu mesa</h2>
-                    <p>Ahora podés reservar tu mesa preferida desde cualquier dispositivo.</p>
-                </div><!--/a-->
+        </div>
+        <!--div class="bienvenida">
+            <p id="bienvenida-texto"> Bienvenido</p>
+        </div-->
+        <section class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="seccion-bloques__bloque" id="home-pedidos">
+                    <!--a href="pages/carta.html"-->
+                    <div class="seccion-bloques__bloque__texto">
+                        <h2>Hace tu pedido online</h2>
+                        <p>Disfruta la calidad de siempre ahora en tu casa</p>
+                    </div>
+                    <!--/a-->
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="seccion-bloques__bloque" id="home-reservas">
+                    <!--a href="pages/reservas.html"-->
+                    <div class="seccion-bloques__bloque__texto">
+                        <h2>Reserva tu mesa</h2>
+                        <p>Ahora podés reservar tu mesa preferida desde cualquier dispositivo.</p>
+                    </div>
+                    <!--/a-->
+                </div>
             </div>
         </section>
         <section class="seccion-banner" id="home-noticia1">
@@ -58,7 +117,7 @@
             <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FTVPNoticias%2Fvideos%2F319149870139936%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" data-controls="false"></iframe></div>
         </section-->
     </main>
-    <footer>
+    <footer class="container-fluid">
         <!--div id="filtropie"></div-->
         <div id="ubicacion">
             <h4>Ubicación</h4>
@@ -76,5 +135,9 @@
             <li>Mapa del sitio</li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
+
 </html>
