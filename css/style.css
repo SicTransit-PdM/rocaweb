@@ -80,10 +80,12 @@ nav a:hover{
     text-decoration: none;
 }*/
 .carousel{
+    background-color: rgb(49, 49, 49);
     margin-bottom: 2rem;
 }
 .carousel-item img{
-    max-height: 20rem;
+    filter: brightness(50%) opacity(90%) sepia(50%);
+    max-height: 32rem;
 }
 .seccion-bloques{
     display: flex;
@@ -206,7 +208,7 @@ footer{
     color: white;
 }
 footer div h4{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: normal;
     text-decoration: underline;
     margin-bottom: 25px;
@@ -222,19 +224,18 @@ footer div p, h6{
 }
 .legales{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 1200px;
     list-style-type: none;
     grid-area: legales;
 }
 .legales li{
-    margin-right: 20px;
-    font-size: 15px;
+    margin-left: 1rem;
+    font-size: 1rem;
     text-align: right;
 }
 .legales h6{
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 /*--------------------   PRESENTACION DE SECCIONES   ------------------------*/
