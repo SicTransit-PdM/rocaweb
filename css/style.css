@@ -13,11 +13,18 @@ body{
     width: 100%;
 }
 main{
-    margin-top: 100px;
+    margin-top: 4rem;
 }
 
+/*---------------------------   HEADER BS  ---------------------------*/
 
-/*---------------------------   HEADER  ---------------------------*/
+#brand-text{
+    font-family: 'Cormorant', serif;
+    border-bottom: 0.5px solid;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+/*---------------------------   HEADER BETA  ---------------------------*/
 header{
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.100);
@@ -49,21 +56,21 @@ header{
     border-bottom: 0.5px solid;
     color: rgba(0, 0, 0, 0.801);
 }
-nav{
+#navBeta{
     width: 50%;
 }
-nav ul{
+#navBeta ul{
     list-style-type: none;
     font-weight: bold;
     font-size: 18px;
     display: flex;
     justify-content: space-evenly;
 }
-nav a{
+#navBeta a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.836);
 }
-nav a:hover{
+#navBeta a:hover{
     border-bottom: 1px solid;
 }
 
@@ -86,6 +93,9 @@ nav a:hover{
 .carousel-item img{
     filter: brightness(50%) opacity(90%) sepia(50%);
     max-height: 32rem;
+}
+#textoCarrusel{
+    z-index: 1;
 }
 .seccion-bloques{
     display: flex;
@@ -432,11 +442,10 @@ footer div p, h6{
     align-items: center;
     justify-content: center;
     background-color: darkgray;
-    height: 600px;
-    width: 800px;
+    height: 30rem;
+    width: 50rem;
     margin-bottom: 50px;
-    margin-left: 20%;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 /*-------------------------   STAFF   -----------------------------*/
@@ -463,7 +472,7 @@ footer div p, h6{
     header{
         flex-direction: column;
     }
-    nav{
+    #navBeta{
         margin-top: 10px;
         width: 100%;
     }
@@ -513,7 +522,7 @@ footer div p, h6{
     #logotitulo{
         margin-left: 5%;
     }
-    nav{
+    #navBeta{
         width: 50%;
     }
     main{

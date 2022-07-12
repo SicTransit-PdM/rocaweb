@@ -5,18 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confitería Roca | Reservas</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="icon" href="../assets/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
+    <nav class="navbar-expand-xl navbar bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="/assets/img/logo.png" alt="Confitería Roca Logo" width="50" height="50" class="d-inline-block ms-3">
+                <span id="brand-text" class="align-middle h1 mb-1 ms-2">CONFITERIA ROCA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-6 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="carta.html">CARTA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="reservas.html">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">LA CONFITERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">QUIENES SOMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--header>
         <div id="logo">
             <div><a href="../index.html"><img src="../assets/img/logo.png" alt="logo" id="logoimagen"></a></div>
             <div><a href="../index.html"><h1 id="logotitulo">CONFITERIA ROCA</h1></a></div>
         </div>
-        <nav>
+        <nav id="navBeta">
             <ul>
                 <li> <a href="carta.html">CARTA</a></li>
                 <li><a href="reservas.html">RESERVAS</a></li>
@@ -25,30 +62,36 @@
                 <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
+    </header-->
     <main id="reservas">
-        <div class="presentacion">
+        <div class="card bg-dark text-white presentacion2">
+            <img src="../assets/img/salon.jpg" class="card-img" alt="reservasfondo">
+            <div class="card-img-overlay presentacion2-titulo">
+            <h5 class="card-title">RESERVAS</h5>
+            </div>
+        </div>
+        <!--div class="presentacion">
             <h2 class="presentaciontitulo">RESERVAS</h2>
             <div class="presentacionfoto" id="presentacionreservas"></div>
-        </div>
-        <article>
+        </div-->
+        <section>
             <h2>Proximamente...</h2>
-            <div id="formres">FORMULARIO PARA RESERVAS</div>
-        </article>
+            <div id="formres" class="container-fluid">FORMULARIO PARA RESERVAS</div>
+        </section>
     </main>
-    <footer>
-        <div id="filtropie"></div>
-        <div class="infopie" id="ubicacion">
-            <h4>Ubicacion</h4>
+    <footer class="container-fluid">
+        <!--div id="filtropie"></div-->
+        <div id="ubicacion">
+            <h4>Ubicación</h4>
             <p>Espora 123, Rio Grande. Tierra del Fuego <br>(2964) 430693</p>
         </div>
-        <div class="infopie" id="rrss">
+        <div id="rrss">
             <h4>Seguinos</h4>
-            <h5>logo1</h5>
-            <h5>logo2</h5>
+            <a style="color: white;" href="#" width="32" height="32"><i class="bi bi-instagram ms-2" ></i></a>
+            <a style="color: white;" href="#"><i class="bi bi-facebook  ms-2" width="32" height="32"></i></a>
         </div>
-        <h6>© 2022 Confiteria Roca - Reservados todos los derechos</h6>
         <ul class="legales">
+            <h6>© 2022 Confiteria Roca - Reservados todos los derechos</h6>
             <li>Terminos de uso</li>
             <li>Politica de privacidad</li>
             <li>Mapa del sitio</li>
