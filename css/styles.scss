@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
+@import "carrusel";
 
 * {
     margin: 0px;
@@ -86,17 +87,7 @@ header{
     background-color: teal;
     text-decoration: none;
 }*/
-.carousel{
-    background-color: rgb(49, 49, 49);
-    margin-bottom: 2rem;
-}
-.carousel-item img{
-    filter: brightness(50%) opacity(90%) sepia(50%);
-    max-height: 32rem;
-}
-#textoCarrusel{
-    z-index: 1;
-}
+
 .seccion-bloques{
     display: flex;
     justify-content: space-evenly;
@@ -216,8 +207,38 @@ footer{
     background-color: rgb(0, 0, 0);
     border-top: 1px solid rgba(0, 0, 0, 0.637);
     color: white;
+    h6{
+        font-weight: normal;
+    }
+    div{
+        h4{
+            font-size: 1.5rem;
+            font-weight: normal;
+            text-decoration: underline;
+            margin-bottom: 25px;
+        }
+        p{
+            font-weight: normal;
+        }
+    }
 }
-footer div h4{
+.legales{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    grid-area: legales;
+
+    li{
+        margin-left: 1rem;
+        font-size: 1rem;
+        text-align: right;
+    }
+    h6{
+        font-size: 1rem;
+    }
+}
+/*footer div h4{
     font-size: 1.5rem;
     font-weight: normal;
     text-decoration: underline;
@@ -226,19 +247,6 @@ footer div h4{
 footer div p, h6{
     font-weight: normal;
 }
-#ubicacion{
-    grid-area: ubicacion;
-}
-#rrss{
-    grid-area: rrss;
-}
-.legales{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-    grid-area: legales;
-}
 .legales li{
     margin-left: 1rem;
     font-size: 1rem;
@@ -246,6 +254,12 @@ footer div p, h6{
 }
 .legales h6{
     font-size: 1rem;
+}*/
+#ubicacion{
+    grid-area: ubicacion;
+}
+#rrss{
+    grid-area: rrss;
 }
 
 /*--------------------   PRESENTACION DE SECCIONES   ------------------------*/
@@ -301,22 +315,22 @@ footer div p, h6{
 .presentacion2{
     align-items: center;
     text-align: center;
+    h5{
+        background-color: rgba(19, 13, 68, 0.850);
+        color: white;
+        border: 0.1rem solid #f1f1f1;
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    img{
+        max-height: 450px;
+    }
 }
 .presentacion2-titulo{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.presentacion2 h5{
-    background-color: rgba(19, 13, 68, 0.850);
-    color: white;
-    border: 0.1rem solid #f1f1f1;
-    font-size: 4rem;
-    font-weight: bold;
-    padding: 3rem 3rem 3rem 3rem;
-}
-.presentacion2 img{
-    max-height: 450px;
 }
 #presentacioncontacto{
     /*background-image: url(../assets/img/taza2.jpg);
@@ -379,20 +393,20 @@ footer div p, h6{
 #infocontacto{
     margin: 20px auto 40px 50px;
     line-height: 25px;
-}
-#infocontacto h2{
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 15px;
+    h2{
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
 }
 #infosubmit{
     margin: 20px auto 40px 50px;
     line-height: 25px;
-}
-#infosubmit h2{
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 15px;
+    h2{
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
 }
 #comentario{
     width: 900px;
@@ -403,39 +417,41 @@ footer div p, h6{
 
 #historia{
     background-color: rgba(240, 240, 215, 0.800);
-}
-#historia section{
-    margin: 10px;
+    section{
+        margin: 10px;
+    }
+    iframe{
+        margin: 25px auto 80px 415px;
+    }
 }
 .año{
     padding: 20px;
     color: rgba(0, 0, 0, 0.750);
-}
-.año h2{
-    margin: 25px;
-    text-align: center;
-    font-size: 50px;
-}
-.año p{
-    padding: 10px;
-    text-indent: 10px;
-    text-align: justify;
-    line-height: 25px;
-    font-size: 20px;
-}
-#historia iframe{
-    margin: 25px auto 80px 415px;
+    h2{
+        margin: 25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    p{
+        padding: 10px;
+        text-indent: 10px;
+        text-align: justify;
+        line-height: 25px;
+        font-size: 20px;
+    }
 }
 
 /*-------------------------   RESERVAS   -----------------------------*/
 
-#reservas section{
-    text-align: center;
-}
-#reservas section h2{
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#reservas{
+    section{
+        text-align: center;
+        h2{
+            font-size: 40px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
 }
 #formres{
     display: flex;

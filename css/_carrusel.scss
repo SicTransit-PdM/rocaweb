@@ -1,0 +1,11 @@
+.carousel{
+    background-color: rgb(49, 49, 49);
+    margin-bottom: 2rem;
+}
+.carousel-item img{
+    filter: brightness(50%) opacity(90%) sepia(50%);
+    max-height: 32rem;
+}
+#textoCarrusel{
+    z-index: 1;
+}
