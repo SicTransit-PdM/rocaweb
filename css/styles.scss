@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap');
-@import "carrusel";
+@import 'carrusel', 'sass2';
 
 * {
     margin: 0px;
@@ -17,7 +17,7 @@ main{
     margin-top: 4rem;
 }
 
-/*---------------------------   HEADER BS  ---------------------------*/
+/*---------------------------   HEADER  ---------------------------*/
 
 #brand-text{
     font-family: 'Cormorant', serif;
@@ -25,68 +25,7 @@ main{
     color: rgba(0, 0, 0, 0.801);
 }
 
-/*---------------------------   HEADER BETA  ---------------------------*/
-header{
-    background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.100);
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#logo{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 40%;
-}
-#logoimagen{
-    width: 100%;
-    height: 65px;
-}
-#logo div a{
-    text-decoration: none;
-}
-#logotitulo{
-    font-family: 'Cormorant', serif;
-    font-size: 250%;
-    border-bottom: 0.5px solid;
-    color: rgba(0, 0, 0, 0.801);
-}
-#navBeta{
-    width: 50%;
-}
-#navBeta ul{
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-evenly;
-}
-#navBeta a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.836);
-}
-#navBeta a:hover{
-    border-bottom: 1px solid;
-}
-
 /*--------------------------------  FRONTPAGE --------------------------------*/
-
-/*#frontpage{
-    background-color: red;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-items: center;
-}*/
-/*.seccion-bloques__bloque a{
-    background-color: teal;
-    text-decoration: none;
-}*/
 
 .seccion-bloques{
     display: flex;
@@ -108,17 +47,17 @@ header{
     width: 75%;
     height: 200px;
     text-align: center;
-}
-.seccion-bloques__bloque__texto h2{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-.seccion-bloques__bloque__texto p{
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    p{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 #home-pedidos{
     background-image: url(../assets/img/taza.jpg);
@@ -134,48 +73,26 @@ header{
     background-size: cover;
     display: flex;
     height: 500px;
-    margin-bottom: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
+    h2{
+        font-size: 50px;
+        margin: 10px 10px 10px 10px;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 25px;
+        margin-top: 25px;
+        text-align: end;
+    }
 }
 .seccion-banner__texto{
-    /*background-color: red;*/
     color: black;
     padding: 10px;
 }
-.seccion-banner h2{
-    /*background-color: blue;*/
-    font-size: 50px;
-    margin: 10px 10px 10px 10px;
-    text-transform: uppercase;
-}
-.seccion-banner p{
-    /*background-color: green;*/
-    font-size: 25px;
-    margin-top: 25px;
-    text-align: end;
-}
-/*#home-noticia2{
-    background-color: aquamarine;
-}
-#home-noticia2__texto {
-    background-color: blue;
-}*/
 
-/*.bienvenida{
-    height: 250px;
-    width: auto;
-    text-align: center;
-    font-size: 600%;
-    animation-name: bienvenidaAnim;
-    animation-duration: 5s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-}
-.bienvenida p{
-    padding-top: 50px;
-}*/
 @keyframes bienvenidaAnim{
     0%{
         background: linear-gradient(70deg, rgb(127, 161, 255), white, white, rgb(127, 161, 255));
@@ -190,194 +107,32 @@ header{
 
 /*------------------------------  FOOTER  ------------------------------*/
 
-footer{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 60% auto;
-    row-gap: 10px;
-    column-gap: 10px;
-    grid-template-areas: 'ubicacion rrss' 'legales legales';
-    justify-content: center;
-    align-content: center;
-    height: 400px;
-    background-image: url(../assets/img/old2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgb(0, 0, 0);
-    border-top: 1px solid rgba(0, 0, 0, 0.637);
-    color: white;
-    h6{
-        font-weight: normal;
-    }
-    div{
-        h4{
-            font-size: 1.5rem;
-            font-weight: normal;
-            text-decoration: underline;
-            margin-bottom: 25px;
-        }
-        p{
-            font-weight: normal;
-        }
-    }
-}
-.legales{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-    grid-area: legales;
-
-    li{
-        margin-left: 1rem;
-        font-size: 1rem;
-        text-align: right;
-    }
-    h6{
-        font-size: 1rem;
-    }
-}
-/*footer div h4{
-    font-size: 1.5rem;
-    font-weight: normal;
-    text-decoration: underline;
-    margin-bottom: 25px;
-}
-footer div p, h6{
-    font-weight: normal;
-}
-.legales li{
-    margin-left: 1rem;
-    font-size: 1rem;
-    text-align: right;
-}
-.legales h6{
-    font-size: 1rem;
-}*/
-#ubicacion{
-    grid-area: ubicacion;
-}
-#rrss{
-    grid-area: rrss;
-}
+@import 'footer';
 
 /*--------------------   PRESENTACION DE SECCIONES   ------------------------*/
 
-.presentacion{
-    position: relative;
-    height: 350px;
-}
-.presentacionfoto{
-    position: relative;
-    height: 100%;
-    background-position: center;
-    background-size: auto 350px px;
-    background-repeat: no-repeat;
-    filter: blur(3px) saturate(85%) contrast(120%);
-}
-.presentaciontitulo{
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: 34%;
-    width: 450px;
-    height: 140px;
-    padding-top: 75px;
-    background-color: rgba(19, 13, 68, 0.850);
-    color: white;
-    border: 1px solid #f1f1f1;
-    font-size: 60px;
-    text-align: center;
-}
-/*#presentacioncarta{
-    display: flex;
-    min-height: 500px;
-    background-image: url(../assets/img/muro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-}*/
-/*#presentacioncarta-titulo{
-    z-index: 1;
-    background-color: rgba(19, 13, 68, 0.850);
-    color: white;
-    border: 0.1rem solid #f1f1f1;
-    text-align: center;
-    align-items: center;
-    min-height: 15rem;
-    min-width: 25rem;
-}*/
-/*#presentacioncarta-titulo h2{
-    border: 1px solid red;
-}*/
-.presentacion2{
-    align-items: center;
-    text-align: center;
-    h5{
-        background-color: rgba(19, 13, 68, 0.850);
-        color: white;
-        border: 0.1rem solid #f1f1f1;
-        font-size: 4rem;
-        font-weight: bold;
-        padding: 3rem 3rem 3rem 3rem;
-    }
-    img{
-        max-height: 450px;
-    }
-}
-.presentacion2-titulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#presentacioncontacto{
-    /*background-image: url(../assets/img/taza2.jpg);
-    background-size: 100% 900px;
-    overflow: hidden;*/
-    background-image: url(../assets/img/barra3.jpg);
-    background-size: cover;
-    filter: blur(3px) saturate(90%) contrast(120%);
-}
-#presentacionhistoria{
-    background-image: url(../assets/img/old.jpg);
-    background-size: cover;
-    filter: blur(3px) saturate(85%) contrast(120%) brightness(60%);
-}
-#presentacionreservas{
-    background-image: url(../assets/img/salon.jpg);
-    background-size: cover;
-}
-#presentacionstaff{
-    background-image: url(../assets/img/staff.jpg);
-    background-size: cover;
-    filter: blur(4px) saturate(85%) contrast(120%) brightness(60%);
-}
+@import 'presentaciones';
 
 /*----------------------------   CARTA   --------------------------------*/
 
 .menu{
-    /* border: 2px solid blue; */
     margin-top: 5rem;
     margin-bottom: 5rem;
     text-align: center;
 }
 .menu_categoria{
-    /* border: 1px solid red; */
     font-size: 2rem;
     font-weight: bold;
     padding: 3rem 3rem 3rem 3rem;
 }
 .menu_categoria div{
-    /* border: 1px solid green; */
     font-size: 1.5rem;
     font-weight: normal;
 }
 
 /*-------------------------   CONTACTO   -----------------------------*/
 
-#contacto{
+#contacto section{
     margin: 100px 100px 100px 100px;
 }
 #contacto form fieldset{
@@ -465,103 +220,21 @@ footer div p, h6{
 }
 
 /*-------------------------   STAFF   -----------------------------*/
-
 #staff{
-    margin: 10px;
-    padding: 20px;
     color: rgba(0, 0, 0, 0.950);
-}
-#staff h2{
-    margin: 25px;
-    /*text-align: center;*/
-    font-size: 50px;
-}
-#staff p{
-    padding: 10px;
-    text-indent: 10px;
-    text-align: justify;
-    line-height: 25px;
-    font-size: 20px;
+    section{
+        h2{
+            margin: 1rem;
+            font-size: 3rem;
+        }
+        p{
+            padding: 1rem;
+            text-indent: 1rem;
+            text-align: justify;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
 }
 
-@media screen and (min-width: 320px){
-    header{
-        flex-direction: column;
-    }
-    #navBeta{
-        margin-top: 10px;
-        width: 100%;
-    }
-    #logo{
-        justify-content: start;
-        width: 100%;
-        margin-left: 10%;
-    }
-    #logotitulo{
-        width: 100%;
-        margin-left: 10%;
-    }
-    main{
-        /*background-color: red;*/
-        width: 100%;
-    }
-    .seccion-bloques{
-        /*background-color: blue;*/
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 1200px;
-        height: 1000px;
-    }
-    .seccion-bloques__bloque{
-        width: 100%;
-        height: 500px;
-    }
-    footer{
-        grid-template-columns: auto;
-        grid-template-rows: 40% 40% 20%;
-        grid-template-areas: 'ubicacion' 'rrss' 'legales';
-        justify-items: center;
-        width: 100%;
-    }
-    #ubicacion, #rrss{
-        text-align: center;
-        padding-top: 10px;
-    }
-}
-@media screen and (min-width: 1200px){
-    header{
-        flex-direction: row;
-    }
-    #logo{
-        width: 40%;
-    }
-    #logotitulo{
-        margin-left: 5%;
-    }
-    #navBeta{
-        width: 50%;
-    }
-    main{
-        /*background-color: red;*/
-        width: 100%;
-    }
-    .seccion-bloques{
-        /*background-color: blue;*/
-        flex-direction: row;
-        width: 100%;
-        height: 500px;
-    }
-    footer{
-        grid-template-columns: auto auto;
-        grid-template-rows: 60% auto;
-        row-gap: 10px;
-        column-gap: 10px;
-        grid-template-areas: 'ubicacion rrss' 'legales legales';
-        justify-content: space-between;
-        align-content: center;
-        width: 100%;
-    }
-    #ubicacion, #rrss{
-        text-align: left;
-    }
-}
+@import "queries";
