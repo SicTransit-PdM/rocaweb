@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confiteria Roca | Inicio</title>
     <link rel="icon" href="assets/img/logo.png">
+    <meta name="description" content="La confitería mas clásica de la ciudad de Río Grande, ahora en la web">
+    <meta name="keywords" content="CONFITERIA, CAFE, MINUTAS, RIO GRANDE, HISTORICO, TIERRA DEL FUEGO">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -24,7 +26,7 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-hidden" id="offcanvasNavbarLabel">MENU</h5>
+                    <h5 class="offcanvas-title text-hidden" id="offcanvasNavbarLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -49,23 +51,6 @@
             </div>
         </div>
     </nav>
-    <!--header class="container-fluid">
-        <div id="logo" class="container-fluid">
-            <div><a href="index.html"><img src="assets/img/logo.png" alt="logo" id="logoimagen"></a></div>
-            <div><a href="index.html">
-                    <h1 id="logotitulo">CONFITERIA ROCA</h1>
-                </a></div>
-        </div>
-        <nav id="navBeta">
-            <ul>
-                <li><a href="pages/carta.html">CARTA</a></li>
-                <li><a href="pages/reservas.html">RESERVAS</a></li>
-                <li><a href="pages/historia.html">LA CONFITERIA</a></li>
-                <li><a href="pages/staff.html">QUIENES SOMOS</a></li>
-                <li><a href="pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header-->
     <main id="frontpage" class="container-fluid">
         <div>
             <div id="carrusel" class="carousel slide" data-bs-ride="true">
@@ -115,28 +100,21 @@
                 </button>
             </div>
         </div>
-        <!--div class="bienvenida">
-            <p id="bienvenida-texto"> Bienvenido</p>
-        </div-->
         <section class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="seccion-bloques__bloque" id="home-pedidos">
-                    <!--a href="pages/carta.html"-->
                     <div class="seccion-bloques__bloque__texto">
                         <h2>Hace tu pedido online</h2>
                         <p>Disfruta la calidad de siempre ahora en tu casa</p>
                     </div>
-                    <!--/a-->
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="seccion-bloques__bloque" id="home-reservas">
-                    <!--a href="pages/reservas.html"-->
                     <div class="seccion-bloques__bloque__texto">
                         <h2>Reserva tu mesa</h2>
                         <p>Ahora podés reservar tu mesa preferida desde cualquier dispositivo.</p>
                     </div>
-                    <!--/a-->
                 </div>
             </div>
         </section>
@@ -147,26 +125,26 @@
                 <p>Se cumplen 53 años de la fundación del mítico Cine Roca</p>
             </div>
         </section>
-        <!--section class="seccion-bloques" id="home-noticia2">
+<!--  POSIBLEMENTE A IMPLEMENTAR:       <section class="seccion-bloques" id="home-noticia2">
             <div id="home-noticia2__texto">
                 <h2>Mirá la nota completa acá</h2>
             </div>
             <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FTVPNoticias%2Fvideos%2F319149870139936%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" data-controls="false"></iframe></div>
-        </section-->
+        </section> -->
     </main>
     <footer class="container-fluid">
-        <!--div id="filtropie"></div-->
-        <div id="ubicacion">
-            <h4>Ubicación</h4>
-            <p>Espora 123, Rio Grande. Tierra del Fuego <br>(2964) 430693</p>
-        </div>
+        <ul id="ubicacion">
+            <li><h4>Ubicación</h4></li>
+            <li><span>Espora 123, Rio Grande. Tierra del Fuego</span></li>
+            <li><span>(2964) 430693</span></li>
+        </ul>
         <div id="rrss" class="container">
             <h4>Seguinos</h4>
             <a style="color: white;" href="#" width="32" height="32"><i class="bi bi-instagram ms-2" ></i></a>
             <a style="color: white;" href="#"><i class="bi bi-facebook  ms-2" width="32" height="32"></i></a>
         </div>
         <ul class="legales">
-            <h6>© 2022 Confiteria Roca - Reservados todos los derechos</h6>
+            <div>© 2022 Confiteria Roca - Reservados todos los derechos</div>
             <li>Terminos de uso</li>
             <li>Politica de privacidad</li>
             <li>Mapa del sitio</li>

@@ -1,0 +1,56 @@
+@import 'sass2';
+footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 60% auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 'ubicacion rrss' 'legales legales';
+    justify-content: center;
+    align-content: center;
+    height: 20rem;
+    background-image: url(../assets/img/old2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid rgba(0, 0, 0, 0.637);
+    color: white;
+    h6{
+        font-weight: normal;
+    }
+    ul{
+        list-style: none;
+        li{
+            h4{
+                font-size: map-get($tamanofuentes, "md");
+                @extend %ejemploExtend;
+                margin-bottom: 1rem;
+            }
+            span{
+                @extend %ejemploExtend;
+            }
+        }
+    }
+}
+.legales{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    grid-area: legales;
+
+    li{
+        @include ejemploMixin;
+    }
+    div{
+        align-content: center;
+        font-size: 1rem;
+    }
+}
+#ubicacion{
+    grid-area: ubicacion;
+}
+#rrss{
+    grid-area: rrss;
+}
