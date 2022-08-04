@@ -61,39 +61,43 @@
             <form action="" method="GET" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Formulario de contacto</legend>
-                    <br>
                     <div id="infocontacto">
                         <h2>Información general</h2>
-                        <p>Espora 123
-                        <br>9420 - Rio Grande, Tierra del Fuego
-                        <br>Tel: (2964) 430693
-                        <br>Email: confiteriaroca@hotmail.com.es
-                        </p>
+                        <ul>
+                            <li>Espora 123</li>
+                            <li>9420 - Rio Grande, Tierra del Fuego</li>
+                            <li>Tel: (2964) 430693</li>
+                            <li>Email: confiteriaroca@hotmail.com.es</li>
+                        </ul>
                     </div>
                     <hr>
                     <div id="infosubmit">
                         <h2>Contactános</h2>
-                        <ul>
-                            <li>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" placeholder="Nombre">
-                                <label for="apellido">Apellido:</label>
-                                <input type="text" placeholder="Apellido">
-                            </li>
-                            <li>
-                                <label for="telefono">Teléfono:</label>
-                                <input type="text" placeholder="Telefono">
-                            </li>
-                            <li>
-                                <label for="email">Email:</label>
-                                <input type="text" placeholder="Email">
-                            </li>
-                            <li>
-                                <label for="comentario">Comentario:</label>
-                                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                            </li>
-                            <li><input type="submit" value="Enviar"><input type="reset" value="Limpiar"></li>
-                        </ul>
+                        <div class="row g-3 m-3">
+                            <div class="col-sm-12 col-md-6">
+                                <label class="form-label" for="nombre">Nombre: </label>
+                                <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label class="form-label" for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese su apellido">
+                            </div>
+                            <div class="col-sm-12">
+                                <label class="form-label" for="telefono">Teléfono: </label>
+                                <input type="text" class="form-control" placeholder="Ingrese su número de telefono">
+                            </div>
+                            <div class="col-sm-12">
+                                <label class="form-label" for="email">Email:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese su email">
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="comentario">Comentario:</label>
+                                <textarea name="comentario" id="comentario" class="form-control w-75" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
             </form>
