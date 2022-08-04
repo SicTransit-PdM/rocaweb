@@ -57,9 +57,25 @@
             <h5 class="card-title">RESERVAS</h5>
             </div>
         </div>
-        <section>
-            <h2>Proximamente...</h2>
-            <div id="formres" class="container-fluid">FORMULARIO PARA RESERVAS</div>
+        <section class="container mb-5">
+            <h2>RESERVA TU MESA</h2>
+            <form>
+                <fieldset class="row g-3">
+                    <legend>Datos de la reserva</legend>
+                    <div class="col-md-6">
+                        <label for="nombre-res" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre-res">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono-res" class="form-label">Telefono:</label>
+                        <input type="text" class="form-control" id="telefono-res">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cantidad-res" class="form-label">Cantidad de personas:</label>
+                        <input type="number" class="form-control" id="cantidad-res">
+                    </div>
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer class="container-fluid">

@@ -240,45 +240,42 @@ footer ul li h4 {
 }
 
 /*-------------------------   CONTACTO   -----------------------------*/
-#contacto section {
-  margin: 100px 100px 100px 100px;
-}
-
 #contacto form fieldset {
+  margin: 2rem 2rem 2rem 2rem;
   background-color: rgba(235, 235, 235, 0.4);
-  height: 700px;
 }
-
 #contacto form fieldset legend {
-  font-size: 30px;
+  margin-top: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
 }
 
 #infocontacto {
-  margin: 20px auto 40px 50px;
-  line-height: 25px;
+  margin: 0.5rem auto 1rem 1.2rem;
+  line-height: 1rem;
 }
 #infocontacto h2 {
   font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#infocontacto ul {
+  list-style: none;
+}
+#infocontacto ul li {
+  line-height: 1.5rem;
 }
 
 #infosubmit {
-  margin: 20px auto 40px 50px;
-  line-height: 25px;
+  line-height: 1rem;
 }
 #infosubmit h2 {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 15px;
-}
-
-#comentario {
-  width: 900px;
-  height: 200px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*-------------------------   HISTORIA   -----------------------------*/
@@ -324,10 +321,8 @@ footer ul li h4 {
   align-items: center;
   justify-content: center;
   background-color: darkgray;
-  height: 30rem;
-  width: 50rem;
   margin-bottom: 50px;
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 /*-------------------------   STAFF   -----------------------------*/
@@ -387,6 +382,10 @@ footer ul li h4 {
   .legales {
     margin-bottom: 2rem;
   }
+  #formres {
+    height: 10rem;
+    width: 20rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   header {
@@ -419,5 +418,9 @@ footer ul li h4 {
   }
   #ubicacion, #rrss {
     text-align: left;
+  }
+  #formres {
+    height: 30rem;
+    width: 50rem;
   }
 }/*# sourceMappingURL=styles.css.map */
