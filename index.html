@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar-expand-xl navbar bg-light fixed-top">
+    <nav  class="navbar-expand-xl navbar bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block ms-3">
@@ -26,13 +26,13 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-hidden" id="offcanvasNavbarLabel"></h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-6 fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="pages/carta.html">CARTA</a>
+                            <a class="nav-link" href="pages/carta.html">CARTA</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/reservas.html">RESERVAS</a>
@@ -51,7 +51,7 @@
             </div>
         </div>
     </nav>
-    <main id="frontpage" class="container-fluid">
+    <main id="frontpage" class="container">
         <div>
             <div id="carrusel" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -102,38 +102,32 @@
         </div>
         <section class="row">
             <div class="col-md-6 col-xs-12">
-                <div class="seccion-bloques__bloque" id="home-pedidos">
+                <a href="#"><div class="seccion-bloques__bloque" id="home-pedidos">
                     <div class="seccion-bloques__bloque__texto">
                         <h2>Hace tu pedido online</h2>
                         <p>Disfruta la calidad de siempre ahora en tu casa</p>
                     </div>
-                </div>
+                </div></a>
             </div>
             <div class="col-md-6 col-xs-12">
-                <div class="seccion-bloques__bloque" id="home-reservas">
+                <a href="pages/reservas.html"><div class="seccion-bloques__bloque" id="home-reservas">
                     <div class="seccion-bloques__bloque__texto">
                         <h2>Reserva tu mesa</h2>
                         <p>Ahora podés reservar tu mesa preferida desde cualquier dispositivo.</p>
                     </div>
-                </div>
+                </div></a>
             </div>
         </section>
-        <section class="seccion-banner" id="home-noticia1">
+        <section class="seccion-banner container" id="home-noticia1">
             <div id="home-noticia1__imagen"></div>
-            <div class="seccion-banner__texto">
+            <div class="seccion-banner__texto container">
                 <h2>53° Aniversario del Cine Roca</h2>
                 <p>Se cumplen 53 años de la fundación del mítico Cine Roca</p>
             </div>
         </section>
-<!--  POSIBLEMENTE A IMPLEMENTAR:       <section class="seccion-bloques" id="home-noticia2">
-            <div id="home-noticia2__texto">
-                <h2>Mirá la nota completa acá</h2>
-            </div>
-            <div><iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FTVPNoticias%2Fvideos%2F319149870139936%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" data-controls="false"></iframe></div>
-        </section> -->
     </main>
     <footer class="container-fluid">
-        <ul id="ubicacion">
+        <ul id="ubicacion" class="container">
             <li><h4>Ubicación</h4></li>
             <li><span>Espora 123, Rio Grande. Tierra del Fuego</span></li>
             <li><span>(2964) 430693</span></li>
