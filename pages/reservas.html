@@ -67,19 +67,34 @@
                         <input type="text" class="form-control" id="nombre-res">
                     </div>
                     <div class="col-md-6">
-                        <label for="telefono-res" class="form-label">Telefono:</label>
+                        <label for="telefono-res" class="form-label">Número de contacto:</label>
                         <input type="text" class="form-control" id="telefono-res">
                     </div>
-                    <div class="col-md-3">
-                        <label for="cantidad-res" class="form-label">Cantidad de personas:</label>
-                        <input type="number" class="form-control" id="cantidad-res">
+                    <div class="col-md-4">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Cantidad de personas</option>
+                            <option value="1">Una</option>
+                            <option value="2">Dos</option>
+                            <option value="3">Tres</option>
+                            <option value="4">Cuatro</option>
+                            <option value="5">Más de cuatro</option>
+                        </select>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            Tiene niños pequeños
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Reservar</button>
                     </div>
                 </fieldset>
             </form>
         </section>
     </main>
     <footer class="container-fluid">
-        <ul id="ubicacion">
+        <ul id="ubicacion" class="container">
             <li><h4>Ubicación</h4></li>
             <li><span>Espora 123, Rio Grande. Tierra del Fuego</span></li>
             <li><span>(2964) 430693</span></li>
